@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задача 0</title>
+</head>
+
+<body>
+    <h1>Задача 0</h1>
+    <p>Обчислити значення виразів</p>
+
+    <script>
+        let a = parseFloat(prompt('Введіть значення a', '0'))
+        let b = parseFloat(prompt('Введіть значення a', '0'))
+        let c = parseFloat(prompt('Введіть значення a', '0'))
+
+        let s1 = a + 12 + b;
+        let s2 = Math.sqrt((a + b) / (2 * a));
+        let s3 = Math.cbrt((a + b) * c);
+        let s4 = Math.sin(a / (-b));
+
+        document.write(`
+       <table border=2px>
+        <tr>
+            <th>Значення s1</th>
+            <th>${s1}</th>
+        </tr>
+        <tr>
+            <th>Значення s2</th>
+            <th>${s2}</th>
+        </tr>
+        <tr>
+            <th>Значення s3</th>
+            <th>${s3}</th>
+        </tr>
+        <tr>
+            <th>Значення s4</th>
+            <th>${s4}</th>
+        </tr>
+        </table>
+       `)
+    </script>
+</body>
+
+</html>

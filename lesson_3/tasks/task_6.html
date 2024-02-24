@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задача 6</title>
+</head>
+
+<body>
+    <h1>Задача 6</h1>
+    <p>З клавіатури вводиться номер дня тижня. Вивести на екран назву дня.</p>
+    <script>
+        let enteringWeekNumber = prompt('Введіть номер тижня', '1')
+        let message
+        switch (enteringWeekNumber) {
+            case '1':
+                message = 'Понеділок'
+                break;
+            case '2':
+                message = 'Вівторок'
+                break;
+            case '3':
+                message = 'Середа'
+                break;
+            case '4':
+                message = 'Четверг'
+                break;
+            case '5':
+                message = "П'ятниця"
+                break;
+            case '6':
+                message = "Субота"
+                break;
+            case '7':
+                message = 'Неділя'
+                break;
+            default:
+                message = 'Забув скільки днів в тижні?'
+                break;
+        }
+        document.write(message)
+    </script>
+</body>
+
+</html>

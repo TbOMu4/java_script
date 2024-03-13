@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задача 6</title>
+</head>
+
+<body>
+    <style>
+        table {
+            display: inline-flex;
+            margin-right: 10px;
+        }
+    </style>
+    <h1>Задача 6</h1>
+    <p> Вивести 3 таблиці (по 3 рядки і 3 стовпці у кожній) за зразком</p>
+
+    <script>
+        let value
+        document.write('<table border="1">');
+        classLabel: for (let i = 0; i < 3; i++) {
+            document.write('<tr>');
+            for (let j = 1; j <= 9; j++) {
+                value = (i * 3) + j;
+                document.write(`<td>${value}</td>`);
+                if (j === 3) continue classLabel;
+            }
+            document.write('</tr>');
+        }
+        document.write('</table>');
+        document.write('<table border="1">');
+        classLabel: for (let i = 0; i < 3; i++) {
+            document.write('<tr>');
+            for (let j = 10; j <= 18; j++) {
+                value = (i * 3) + j;
+                document.write(`<td>${value}</td>`);
+                if (j === 12) continue classLabel;
+            }
+            document.write('</tr>');
+        }
+        document.write('</table>');
+
+        document.write('</table>');
+        document.write('<table border="1">');
+        classLabel: for (let i = 0; i < 3; i++) {
+            document.write('<tr>');
+            for (let j = 19; j <= 27; j++) {
+                value = (i * 3) + j;
+                document.write(`<td>${value}</td>`);
+                if (j === 21) continue classLabel;
+            }
+            document.write('</tr>');
+        }
+        document.write('</table>');
+    </script>
+
+</body>
+
+</html>

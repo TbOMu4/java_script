@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задача 15</title>
+</head>
+
+<body>
+    <h1>Задача 15</h1>
+    <p>Користувача поступово вводить показники температури протягом року. Знайти середню температуру.</p>
+
+    <script>
+        let sum = 0
+        const rangeStart = -20,
+            rangeEnd = 20
+        let minTemperature = +Infinity
+        let maxTemperature = -Infinity
+        for (let i = 0; i < 365; i++) {
+            let temperature = rangeStart + Math.floor(Math.random() * (rangeEnd - rangeStart + 1))
+            sum += temperature
+            if (temperature > maxTemperature) maxTemperature = temperature
+            if (temperature < minTemperature) minTemperature = temperature
+        }
+        const average = sum / 365
+        document.write(`Average=${average.toFixed(3)}, max=${maxTemperature},
+                min = ${minTemperature }`)
+    </script>
+</body>
+
+</html>

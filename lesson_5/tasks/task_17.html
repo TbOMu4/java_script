@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задача 14</title>
+</head>
+
+<body>
+    <h1>Задача 14</h1>
+    <p>Каса. Користувачу повідомляють суму, яку йому треба сплатити. Користувач поступово вводить суму грошей до тих
+        пір, поки суми не буде достатньо для оплати товарів (кожного разу користувачу повідомляють, яку ще суму потрібно
+        ввести). </p>
+
+    <script>
+        let amountPay = 999;
+        while (amountPay > 0) {
+            let sumUser = parseInt(prompt(`Вам залишилося сплатити ${amountPay} грн`));
+            if (sumUser <= amountPay) {
+                amountPay -= sumUser;
+                alert(`До сплати залишилося ${amountPay} грн`);
+            } else {
+                alert("Ви ввели суму більшу, ніж потрібно сплатити.");
+            }
+        }
+    </script>
+</body>
+
+</html>

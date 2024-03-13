@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задача 1</title>
+
+</head>
+
+<body>
+    <style>
+        ul {
+            margin: 0;
+        }
+    </style>
+    <h1>Задача 1</h1>
+    <p>Вивести з використанням циклів маркований список з випадковими числами (1-100). Кількість випадкових чисел
+        вводиться користувачем. Приклад: 12,21,34,51</p>
+
+    <script>
+        for (let i = 0; i < 4; i++) {
+            let randomNumber = 1 + Math.floor(Math.random() * 100)
+            document.write(`<ul>
+                                <li>${randomNumber}</li>
+                            </ul>`)
+        }
+    </script>
+</body>
+
+</html>

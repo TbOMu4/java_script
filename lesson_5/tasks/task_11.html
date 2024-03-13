@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задача 8</title>
+</head>
+
+<body>
+    <h1>Задача 8</h1>
+    <p>Користувач загадує число. За 3 спроби комп’ютер намагається вгадати число користувача (використати confirm).</p>
+
+    <script>
+        const NUMBER_GUESSED = 3
+        for (let i = 1; i <= 3; i++) {
+            let guessNumber = 1 + Math.floor(Math.random() * 5)
+            if (guessNumber === NUMBER_GUESSED) {
+                let randomNumder = confirm(`Загадане число ${guessNumber}`)
+                document.write(`Комп'ютер вгадав ваше число за кількість спроб ${i} :  ${NUMBER_GUESSED}`)
+                break
+            } else
+                document.write(`Комп'ютер не зміг вгадати ваше число за ${i} спробу. <br>`)
+        }
+    </script>
+</body>
+
+</html>
